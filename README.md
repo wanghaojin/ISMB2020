@@ -1,3 +1,3 @@
 # ISMB2020
 
-Is Ing Model Background Knowledge
+IS-ing Model Brainstorm
