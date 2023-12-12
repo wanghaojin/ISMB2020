@@ -1,3 +1,3 @@
 # ISMB2020
 
-#ISING Model Background Knowledge
+Is Ing Model Background Knowledge
