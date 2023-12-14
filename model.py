@@ -1,5 +1,6 @@
 import random
 import math
+import copy
 def rand(p):
     random = random.uniform(0,1)
     if random <= p:
@@ -15,5 +16,9 @@ def eval(x,y,map,n,beta):
     sum = lefyward + upward + rightward + downward
     probability = 1 / (math.exp(-2*beta * sum))
     return rand(probability)
-def update():
-    pass
+def update(map,n,beta):
+    map_copy = copy.deepcopy(map)
+    for i in range(n):
+        for j in range(n):
+            map_copy[i][j] = eval(i,j,map,n,beta)
+    map = map_copy
