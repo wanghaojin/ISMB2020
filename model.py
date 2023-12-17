@@ -16,7 +16,9 @@ def eval(x,y,map,n,beta):
     sum = lefyward + upward + rightward + downward
     probability = 1 / (math.exp(-2*beta * sum))
     return rand(probability)
-def update(map,n,beta):
+
+def update():
+    global map,n,beta
     map_copy = copy.deepcopy(map)
     for i in range(n):
         for j in range(n):
